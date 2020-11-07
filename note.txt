@@ -1,0 +1,4 @@
+add form validation to ex_2
+number checker:
+    iterate through string and parseInt(s[i])
+        if every is diffrent than NaN return true

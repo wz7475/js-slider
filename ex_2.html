@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Excersise 1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"  />
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <style>
+        body {
+            background-color: #404040;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+
+    <script type="text/javascript">
+    const print = () =>
+    {
+        let a = document.getElementById("number1").value;
+        let b = document.getElementById("number2").value;
+        let score = "";
+        for(let i = a; i<= b; i++)
+        {
+            score += i + " ";
+        }
+        document.getElementById("answer").innerHTML = score;
+    }
+
+    </script>
+</head>
+
+<body>
+    <p>Enter 2 inters number to print numbers in that range</p>
+    <input type="text" id="number1">
+    <input type="text" id="number2">
+    <button onclick="print()">
+        Print
+    </button>
+    <div id="answer"></div>
+</body>
+
+</html>

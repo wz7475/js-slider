@@ -20,17 +20,48 @@
     </style>
 
     <script type="text/javascript">
-    const print = () =>
-    {
-        let a = document.getElementById("number1").value;
-        let b = document.getElementById("number2").value;
-        let score = "";
-        for(let i = a; i<= b; i++)
-        {
-            score += i + " ";
+        const validator = (str) => {
+            if (str === "")
+                return false;
+            for (i in str) {
+                if (isNaN(parseInt(str[i])) && str[i] !== "-")
+                    return false;
+            }
+            return true;
         }
-        document.getElementById("answer").innerHTML = score;
-    }
+        const print = () => {
+            let a = document.getElementById("number1").value;
+            let b = document.getElementById("number2").value;
+            let answer;
+            if (validator(a) && validator(b)) {
+                a = parseInt(a);
+                b = parseInt(b);
+                if (a === b)
+                    answer = "same numbers";
+                else if (a < b) {
+                    let score = "";
+                    for (let i = a; i <= b; i++) {
+                        score += i + " ";
+                    }
+                    answer = score;
+                }
+                else {
+                    let score = "";
+                    for (let i = a; i >= b; i--) {
+                        score += i + " ";
+                    }
+                    answer = score;
+                }
+            }
+            else if (validator(a) === false && validator(b) === false)
+                answer = "Wrong input in both fields";
+            else if (validator(a) === false)
+                answer = "Wrong input in left field";
+            else
+                answer = "Wrong input in right field";
+            document.getElementById("answer").innerHTML = answer;
+
+        }
 
     </script>
 </head>

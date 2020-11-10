@@ -1,0 +1,32 @@
+body {
+    background-color: #404040;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#switch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 440px;
+    margin: 30px 0px;
+}
+
+.option {
+    background-color: darkorange;
+    font-weight: 700;
+    padding: 15px 25px;
+}
+
+.option:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: darkorange;
+}
+
+#gallery img{
+    overflow: hidden;
+    object-fit: cover;
+    height: 300px;
+}

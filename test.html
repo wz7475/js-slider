@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"  />
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <script>
+        const tester = (button) => {
+            document.getElementById("text").innerHTML = button.className;
+        }
+    </script>
+
+</head>
+
+<body>
+    <button class="class1 class2" id="1" onclick="tester(this)">no 1</button>
+    <button id="2" onclick="tester(this)">no 2</button>
+    <div id="text"></div>
+</body>
+
+</html>

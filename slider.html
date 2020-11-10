@@ -16,14 +16,14 @@
 <body>
     <h2>Basic slider</h2>
     <div id="switch">
-        <div class="option" onclick="load_img()">1</div>
-        <div class="option">2</div>
-        <div class="option">3</div>
-        <div class="option">4</div>
-        <div class="option">5</div>
+        <div id="1" class="option chosen" onclick="load_img(this)">1</div>
+        <div onclick="load_img(this)" id="2" class="option">2</div>
+        <div onclick="load_img(this)" id="3" class="option">3</div>
+        <div onclick="load_img(this)" id="4" class="option">4</div>
+        <div onclick="load_img(this)" id="5" class="option">5</div>
     </div>
     <div id="gallery">
-        <img src="img/3.jpg" width="440px">
+        <img src="img/1.jpg" width="440px">
     </div>
 </body>
 

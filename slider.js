@@ -13,10 +13,20 @@ const update_chosen = (button) =>
     document.getElementById(button.id).className += " chosen"
 }
 
+const update_arrows = (number) =>
+{
+    
+}
+
 const forward = () =>
 {
-    let current = document.getElementsByClassName("chosen");
-    let b;
+    let obj = document.getElementsByClassName("chosen");
+    let current = obj[0].id;
+    current = parseInt(current);
+    current = (current + 1) % 5;
+    current = current.toString();
+    let address = `<img src="img/${current}.jpg" width="440px">`;
+    document.getElementById("gallery").innerHTML = address;
 }
 
 const load_img = (picture) =>

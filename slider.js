@@ -13,6 +13,12 @@ const update_chosen = (button) =>
     document.getElementById(button.id).className += " chosen"
 }
 
+const forward = () =>
+{
+    let current = document.getElementsByClassName("chosen");
+    let b;
+}
+
 const load_img = (picture) =>
 {
     const number = picture.id;

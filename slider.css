@@ -5,7 +5,27 @@ body {
     background-color: #404040;
     color: #fff;
     font-size: 20px;
-    margin-left: 60px;
+    text-align: center;
+}
+
+main{
+    margin: auto;
+    width: 100%;
+}
+
+#screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow{
+    font-size: 80px;
+    margin: 20px;
+}
+.arrow i:hover{
+    cursor: pointer;
+    color: #333;
 }
 
 #switch {
@@ -13,7 +33,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 440px;
-    margin: 30px 0px;
+    margin: 30px auto;
 }
 
 .option {

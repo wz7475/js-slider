@@ -19,26 +19,26 @@
         <h2>Basic slider</h2>
     </header>
     <main>
-        <div class="arrow">
-            <i class="fas fa-caret-left"></i>
+        <div id="switch">
+            <div id="1" class="option chosen" onclick="load_img(this)">1</div>
+            <div onclick="load_img(this)" id="2" class="option">2</div>
+            <div onclick="load_img(this)" id="3" class="option">3</div>
+            <div onclick="load_img(this)" id="4" class="option">4</div>
+            <div onclick="load_img(this)" id="5" class="option">5</div>
         </div>
         <div id="screen">
-            <div id="switch">
-                <div id="1" class="option chosen" onclick="load_img(this)">1</div>
-                <div onclick="load_img(this)" id="2" class="option">2</div>
-                <div onclick="load_img(this)" id="3" class="option">3</div>
-                <div onclick="load_img(this)" id="4" class="option">4</div>
-                <div onclick="load_img(this)" id="5" class="option">5</div>
+            <div class="arrow">
+                <i class="fas fa-caret-left"></i>
             </div>
             <div id="gallery">
                 <img src="img/1.jpg" width="440px">
             </div>
-        </div>
-        <div class="arrow">
-            <i class="fas fa-caret-right"></i>
+            <div class="arrow">
+                <i onclick="forward()" class="fas fa-caret-right"></i>
+            </div>
         </div>
     </main>
-    
+
 </body>
 
 </html>

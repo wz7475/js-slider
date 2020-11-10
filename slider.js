@@ -29,8 +29,8 @@ const forward = () =>
     let current = obj[0].id;
     current = parseInt(current);
     update_forward(current);
-    current = current + 1;
-    current === 6 ? current=5 : current+=0;
+    current++;
+    current === 6 ? current=1 : current+=0;
     current = current.toString();
     let address = `<img src="img/${current}.jpg" width="440px">`;
     document.getElementById("gallery").innerHTML = address;

@@ -4,7 +4,7 @@ const update_chosen = (button) =>
     let obj = document.getElementsByClassName('chosen')[0];
     document.getElementById(obj.id).classList.remove("chosen");
     //choose to highlight
-    document.getElementById(button.id).className += " chosen"
+    document.getElementById(button.id).classList.add("chosen");
 }
 const load_img = (picture) =>
 {
